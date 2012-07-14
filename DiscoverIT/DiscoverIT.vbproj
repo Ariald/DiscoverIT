@@ -86,6 +86,65 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="contact.html" />
+    <Content Include="content.html" />
+    <Content Include="css.css" />
+    <Content Include="images\arrow.gif" />
+    <Content Include="images\index_01.gif" />
+    <Content Include="images\index_02.gif" />
+    <Content Include="images\index_03.gif" />
+    <Content Include="images\index_04.gif" />
+    <Content Include="images\index_05.gif" />
+    <Content Include="images\index_06.gif" />
+    <Content Include="images\index_07.gif" />
+    <Content Include="images\index_08.gif" />
+    <Content Include="images\index_09.gif" />
+    <Content Include="images\index_10.gif" />
+    <Content Include="images\index_11.gif" />
+    <Content Include="images\index_12.gif" />
+    <Content Include="images\index_13.gif" />
+    <Content Include="images\index_14.gif" />
+    <Content Include="images\index_15.gif" />
+    <Content Include="images\index_16.gif" />
+    <Content Include="images\index_17.gif" />
+    <Content Include="images\index_18.gif" />
+    <Content Include="images\index_19.gif" />
+    <Content Include="images\index_20.gif" />
+    <Content Include="images\index_21.gif" />
+    <Content Include="images\index_22.gif" />
+    <Content Include="images\index_23.gif" />
+    <Content Include="images\index_24.gif" />
+    <Content Include="images\index_25.gif" />
+    <Content Include="images\index_26.gif" />
+    <Content Include="images\index_27.gif" />
+    <Content Include="images\index_28.gif" />
+    <Content Include="images\index_29.gif" />
+    <Content Include="images\index_30.gif" />
+    <Content Include="images\index_31.gif" />
+    <Content Include="images\index_32.jpg" />
+    <Content Include="images\index_33.gif" />
+    <Content Include="images\index_34.gif" />
+    <Content Include="images\index_35.gif" />
+    <Content Include="images\index_36.gif" />
+    <Content Include="images\index_37.gif" />
+    <Content Include="images\index_38.gif" />
+    <Content Include="images\index_39.gif" />
+    <Content Include="images\index_40.gif" />
+    <Content Include="images\index_41.gif" />
+    <Content Include="images\index_42.gif" />
+    <Content Include="images\index_43.gif" />
+    <Content Include="images\index_44.gif" />
+    <Content Include="images\index_45.gif" />
+    <Content Include="images\index_46.gif" />
+    <Content Include="images\index_47.gif" />
+    <Content Include="images\index_48.gif" />
+    <Content Include="images\index_49.gif" />
+    <Content Include="images\index_50.gif" />
+    <Content Include="images\index_51.gif" />
+    <Content Include="images\reset.gif" />
+    <Content Include="images\spacer.gif" />
+    <Content Include="images\submit.gif" />
+    <Content Include="index.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -124,6 +183,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="images\Thumbs.db" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
