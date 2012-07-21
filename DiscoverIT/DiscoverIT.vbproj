@@ -145,6 +145,8 @@
     <Content Include="images\spacer.gif" />
     <Content Include="images\submit.gif" />
     <Content Include="index.html" />
+    <Content Include="Mantenimientos\RegistroVehiculos.aspx" />
+    <Content Include="Vehiculos\dcu 1.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -154,6 +156,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mantenimientos\RegistroVehiculos.aspx.designer.vb">
+      <DependentUpon>RegistroVehiculos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\RegistroVehiculos.aspx.vb">
+      <DependentUpon>RegistroVehiculos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -196,6 +205,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessEntity\BusinessEntity.vbproj">
+      <Project>{D9C6AC86-AEB0-4833-92CE-0974830E02FE}</Project>
+      <Name>BusinessEntity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
