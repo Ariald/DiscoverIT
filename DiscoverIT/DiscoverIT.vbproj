@@ -86,8 +86,8 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="contact.html" />
-    <Content Include="content.html" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content.aspx" />
     <Content Include="css.css" />
     <Content Include="images\arrow.gif" />
     <Content Include="images\index_01.gif" />
@@ -144,7 +144,9 @@
     <Content Include="images\reset.gif" />
     <Content Include="images\spacer.gif" />
     <Content Include="images\submit.gif" />
-    <Content Include="index.html" />
+    <Content Include="Index.aspx" />
+    <Content Include="Mantenimientos\ConsultaVehiculo.aspx" />
+    <Content Include="Mantenimientos\RegistroUsuario.aspx" />
     <Content Include="Mantenimientos\RegistroVehiculos.aspx" />
     <Content Include="Vehiculos\dcu 1.png" />
     <Content Include="Web.config" />
@@ -156,6 +158,41 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contact.aspx.designer.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Content.aspx.designer.vb">
+      <DependentUpon>Content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content.aspx.vb">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\ConsultaVehiculo.aspx.designer.vb">
+      <DependentUpon>ConsultaVehiculo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\ConsultaVehiculo.aspx.vb">
+      <DependentUpon>ConsultaVehiculo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\RegistroUsuario.aspx.designer.vb">
+      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\RegistroUsuario.aspx.vb">
+      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Mantenimientos\RegistroVehiculos.aspx.designer.vb">
       <DependentUpon>RegistroVehiculos.aspx</DependentUpon>
     </Compile>
@@ -182,6 +219,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Vehiculo.Master.designer.vb">
+      <DependentUpon>Vehiculo.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vehiculo.Master.vb">
+      <DependentUpon>Vehiculo.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -202,6 +246,7 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <Content Include="Vehiculo.Master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -210,6 +255,10 @@
     <ProjectReference Include="..\BusinessEntity\BusinessEntity.vbproj">
       <Project>{D9C6AC86-AEB0-4833-92CE-0974830E02FE}</Project>
       <Name>BusinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.vbproj">
+      <Project>{5ABB6BFB-C5A5-4938-9999-A2B4C756F35E}</Project>
+      <Name>BusinessLogic</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />

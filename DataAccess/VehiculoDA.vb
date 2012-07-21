@@ -6,7 +6,6 @@ Imports BusinessEntity
 Public Class VehiculoDA
     Dim con As New Conexion
 
-    
     Public Function RegistrarVehiculo(ByVal Vehiculo As VehiculoBE) As DataSet
         Dim conexion As SqlConnection
         conexion = con.conectar
@@ -59,7 +58,7 @@ Public Class VehiculoDA
 
         daUsuario.SelectCommand.Parameters.Add(New SqlParameter("@Imagen", SqlDbType.VarChar, 50))
         daUsuario.SelectCommand.Parameters("@Imagen").Direction = ParameterDirection.Input
-        daUsuario.SelectCommand.Parameters("@Imagen").Value = Vehiculo.Descripcion
+        daUsuario.SelectCommand.Parameters("@Imagen").Value = Vehiculo.Imagen
 
         Dim dsUsuario As New DataSet
         daUsuario.Fill(dsUsuario, "LoginUsuario")
@@ -71,6 +70,5 @@ Public Class VehiculoDA
         conexion.Dispose()
 
     End Function
-
 
 End Class

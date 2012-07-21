@@ -1,6 +1,7 @@
 ﻿Imports System
 
 Public Class VehiculoBE
+    Private intUsuario As Integer
     Private strPlaca As String
     Private strMarca As String
     Private strModelo As String
@@ -12,6 +13,15 @@ Public Class VehiculoBE
     Private strTransmision As String
     Private strCombustible As String
     Private strImagen As String
+
+    Public Property Usuario() As Integer
+        Get
+            Return intUsuario
+        End Get
+        Set(ByVal value As Integer)
+            intUsuario = value
+        End Set
+    End Property
 
     Public Property Placa() As String
         Get
