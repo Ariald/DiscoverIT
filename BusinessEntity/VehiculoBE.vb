@@ -91,7 +91,7 @@ Public Class VehiculoBE
             Return strMotor
         End Get
         Set(ByVal value As String)
-            strModelo = value
+            strMotor = value
         End Set
     End Property
 

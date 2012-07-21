@@ -32,6 +32,15 @@ Partial Public Class ConsultaVehiculo
     Protected WithEvents ddlModelo As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
+    '''btnBuscar control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnBuscar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''litVehiculos control.
     '''</summary>
     '''<remarks>

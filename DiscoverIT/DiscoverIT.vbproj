@@ -149,6 +149,9 @@
     <Content Include="Mantenimientos\RegistroUsuario.aspx" />
     <Content Include="Mantenimientos\RegistroVehiculos.aspx" />
     <Content Include="Vehiculos\dcu 1.png" />
+    <Content Include="Vehiculos\DSCF2313.JPG" />
+    <Content Include="Vehiculos\IMG_0116.PNG" />
+    <Content Include="Vehiculos\IMG_0223.PNG" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
