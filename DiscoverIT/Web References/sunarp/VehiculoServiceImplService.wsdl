@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://servicio.sunarp.com/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="VehiculoServiceImplService" targetNamespace="http://servicio.sunarp.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://servicio.sunarp.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="consultarVehiculo" type="tns:consultarVehiculo" />
+      <xs:element name="consultarVehiculoResponse" type="tns:consultarVehiculoResponse" />
+      <xs:complexType name="consultarVehiculo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="codigoVehiculo" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="consultarVehiculoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:vehiculo" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="vehiculo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="afabrica" type="xs:string" />
+          <xs:element minOccurs="0" name="chazis" type="xs:string" />
+          <xs:element minOccurs="0" name="codigo" type="xs:string" />
+          <xs:element minOccurs="0" name="color" type="xs:string" />
+          <xs:element minOccurs="0" name="marca" type="xs:string" />
+          <xs:element minOccurs="0" name="modelo" type="xs:string" />
+          <xs:element minOccurs="0" name="motor" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="consultarVehiculoResponse">
+    <wsdl:part name="parameters" element="tns:consultarVehiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultarVehiculo">
+    <wsdl:part name="parameters" element="tns:consultarVehiculo" />
+  </wsdl:message>
+  <wsdl:portType name="VehiculoService">
+    <wsdl:operation name="consultarVehiculo">
+      <wsdl:input name="consultarVehiculo" message="tns:consultarVehiculo" />
+      <wsdl:output name="consultarVehiculoResponse" message="tns:consultarVehiculoResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VehiculoServiceImplServiceSoapBinding" type="tns:VehiculoService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="consultarVehiculo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="consultarVehiculo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="consultarVehiculoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VehiculoServiceImplService">
+    <wsdl:port name="VehiculoServiceImplPort" binding="tns:VehiculoServiceImplServiceSoapBinding">
+      <soap:address location="http://localhost:8080/sunarp/VehiculoService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
