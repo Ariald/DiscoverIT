@@ -42,19 +42,19 @@ Public Class VehiculoDA
 
         daUsuario.SelectCommand.Parameters.Add(New SqlParameter("@Kilometraje", SqlDbType.VarChar, 15))
         daUsuario.SelectCommand.Parameters("@Kilometraje").Direction = ParameterDirection.Input
-        daUsuario.SelectCommand.Parameters("@Kilometraje").Value = Vehiculo.Descripcion
+        daUsuario.SelectCommand.Parameters("@Kilometraje").Value = Vehiculo.Kilometraje
 
         daUsuario.SelectCommand.Parameters.Add(New SqlParameter("@Motor", SqlDbType.VarChar, 10))
         daUsuario.SelectCommand.Parameters("@Motor").Direction = ParameterDirection.Input
-        daUsuario.SelectCommand.Parameters("@Motor").Value = Vehiculo.Descripcion
+        daUsuario.SelectCommand.Parameters("@Motor").Value = Vehiculo.Motor
 
         daUsuario.SelectCommand.Parameters.Add(New SqlParameter("@Transmision", SqlDbType.VarChar, 15))
         daUsuario.SelectCommand.Parameters("@Transmision").Direction = ParameterDirection.Input
-        daUsuario.SelectCommand.Parameters("@Transmision").Value = Vehiculo.Descripcion
+        daUsuario.SelectCommand.Parameters("@Transmision").Value = Vehiculo.Transmision
 
         daUsuario.SelectCommand.Parameters.Add(New SqlParameter("@Combustible", SqlDbType.VarChar, 15))
         daUsuario.SelectCommand.Parameters("@Combustible").Direction = ParameterDirection.Input
-        daUsuario.SelectCommand.Parameters("@Combustible").Value = Vehiculo.Descripcion
+        daUsuario.SelectCommand.Parameters("@Combustible").Value = Vehiculo.Combustible
 
         daUsuario.SelectCommand.Parameters.Add(New SqlParameter("@Imagen", SqlDbType.VarChar, 50))
         daUsuario.SelectCommand.Parameters("@Imagen").Direction = ParameterDirection.Input

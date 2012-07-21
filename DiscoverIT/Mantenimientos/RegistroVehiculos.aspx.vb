@@ -52,4 +52,18 @@ Public Class RegistroVehiculos
             hidImagen.Value = fileName
         End If
     End Sub
+
+    Protected Sub btnCancelar_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnCancelar.Click
+        txtNroPlaca.Text = ""
+        lblMarca.Text = ""
+        lblModelo.Text = ""
+        lblPropietario.Text = ""
+        lblSede.Text = ""
+        txtDescripcion.Text = ""
+        txtKilometraje.Text = ""
+        txtMotor.Text = ""
+        txtTransmision.Text = ""
+        txtCombustible.Text = ""
+        imgVehiculo.ImageUrl = ""
+    End Sub
 End Class
