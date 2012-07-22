@@ -24,17 +24,12 @@ public class VehiculoServiceTest {
 		
 	}
 	
-	
+	//ahora buscamos la placa por vehiculo 
 	@Test
-	public void deberiaBuscarPorPlaca(){
-		
-		//buscamos la placa del vehiculo
-		
-		Vehiculo vehiculo = service.consultarVehiculo("B2P258");
-		
+	public void deberiaBuscarPorPlaca{
+		Vehiculo vehiculo = service.consultarVehiculo("b2p258");
 		assertNotNull(vehiculo);
-		
-		
 	}
+	
 
 }
