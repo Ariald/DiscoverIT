@@ -28,6 +28,7 @@ public class VehiculoServiceTest {
 	@Test
 	public void deberiaBuscarPorPlaca(){
 		
+		//buscamos la placa del vehiculo
 		
 		Vehiculo vehiculo = service.consultarVehiculo("B2P258");
 		
